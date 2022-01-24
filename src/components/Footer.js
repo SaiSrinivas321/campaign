@@ -50,8 +50,8 @@ const Footer = () => {
   })
     
   return(
-    <Center width={"100%"} style={{'position' : 'relative'}} flexDirection ={['column','column','row','row']} p={2} bg={useColorModeValue('gray.50', 'gray.900')}>
-    <Center flexDirection={"column"}>
+    <Center width={"100%"} style={{'position' : 'relative'}} flexDirection ={['column-reverse','column-reverse','row','row']} p={2} bg={useColorModeValue('gray.50', 'gray.900')}>
+    <Center flexDirection={'column'}>
     <Box
       color={useColorModeValue('gray.700', 'gray.200')}
       width={'100%'}>

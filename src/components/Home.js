@@ -52,7 +52,7 @@ const Home = ()=>{
          </Flex>
          <Motive />
          <Credentials />
-         <Lifeinitiatives />
+         {/* <Lifeinitiatives /> */}
          <Testimonials />
          <Footer />
         

@@ -91,7 +91,9 @@ const Footer = () => {
           Show your Support
         </Button>
         <Box  p={2}  width={'100%'}>
+        <Center>
         <Text fontWeight={"600"}>Supporters : <strong>{count}</strong></Text>
+        </Center>
         </Box>
          </Center>
     </Center>

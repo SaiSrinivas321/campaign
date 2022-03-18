@@ -1,4 +1,4 @@
-import { Box, Button, Center, Flex, Text } from '@chakra-ui/react';
+import { Center, Flex} from '@chakra-ui/react';
 import About from './About';
 import Credentials from './Credentials';
 import Motive from './Motive';
@@ -7,7 +7,6 @@ import Testimonials from './Testimonials';
 import React, { useState } from 'react';
 import "../styles/styles.css";
 import Footer from './Footer';
-import Lifeinitiatives from './Lifeinitiatives';
 
 
 const Home = ()=>{

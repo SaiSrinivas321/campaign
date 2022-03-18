@@ -18,6 +18,33 @@ html{
 .heading{
     font-family: 'Merriweather', serif !important;
 }
+.hashtag{
+    /* font-weight: 700 !important; */
+    color: linear-gradient(-45deg,  #23a6d5, #23d5ab) !important;
+
+}
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 1.0s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    25% { border-color: orange; }
+  }
 .mainnavtext{
     font-family: 'Lato', sans-serif !important;
 }
@@ -68,12 +95,14 @@ blockquote:after {
     left: 18px;
     height: 100%;
     width: 4px;
-    background-color: rgb(33, 150, 243) !important;
+    background-color: black !important;
 }
 
 
-.vertical-timeline-element-content .vertical-timeline-element-date {
-    color: rgb(33, 150, 243) !important;
+ .vertical-timeline-element-date  {
+    color: #03045E !important;
+    font-weight: 700 !important;
+    text-align : center !important;
 }
 
 .supportus{
@@ -98,6 +127,13 @@ blockquote:after {
     background: linear-gradient(-45deg, #1fa2ff,#12d8fa,#a6ffcb);
     color: black;
 }
+
+.timeline-img{
+    max-width: "10px";
+    max-height: "8px";
+}
+
+
 
 @media only screen and (max-width: 1170px){ 
     .vertical-timeline-element-content .vertical-timeline-element-date {

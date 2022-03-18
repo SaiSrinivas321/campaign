@@ -4,7 +4,7 @@ import "../styles/styles.css"
 const Motive = () => {
   return(
       <Center id='motive' className="motive"  flexDirection = {'column'} p={2} m={2}>
-          <Heading m={3} className={'heading'} marginTop={"75px"}>My Motive</Heading>
+          <Heading m={3} className={'heading'} marginTop={"75px"}>Vision</Heading>
           <Center flexDirection={'column'} width={'100%'} p={2} m={2}>
               <Flex flexDirection={['column','row']} width={'85%'} style={{"transition" : 'transform .2s'}} _hover={{'transform' : "scale(1.1)"}} p={4} m={2} boxShadow={'2xl'} borderRadius={'xl'}>
                   <Box width={['100%','50%']}>

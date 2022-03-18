@@ -1,9 +1,7 @@
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
@@ -19,8 +17,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from '@chakra-ui/icons';
-import React, { useState } from 'react';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
+import React from 'react';
 import "../styles/styles.css"
 
 const Navbar = ({percentage}) => {
@@ -34,14 +31,17 @@ const Navbar = ({percentage}) => {
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'} px={2}>
           <HStack spacing={8} alignItems={'center'}>
           <a href="/" _hover = {{ textDecoration : 'none'}} >
-            <Heading size={'lg'}  className={'mainnavtext'}>Dheeraj For Cul-sec</Heading>
+            <Heading size={'lg'}  >#<span className = 'hashtag'>C</span>ul<span className = 'hashtag'>S</span>ec<span className = 'hashtag'>D</span>heeraj</Heading>
              </a>
             <HStack
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
                     <Box m={1} pt={2} px={2} >
-                   <a href='#motive'><Heading size={'md'} className={'navtext'}>My Motive</Heading></a> 
+                   <a href='#motive'><Heading size={'md'} className={'navtext'}>Vision</Heading></a> 
+                    </Box>
+                    <Box m={1} pt={2} px={2} >
+                    <a href='#'> <Heading size={'md'} className={'navtext'} isDisabled>Manifesto</Heading></a>
                     </Box>
                     <Box m={1} pt={2} px={2} >
                     <a href='#credentials'> <Heading size={'md'} className={'navtext'}>Credentials</Heading></a>
@@ -49,10 +49,9 @@ const Navbar = ({percentage}) => {
                     <Box pt={2} px={2}>
                     <Menu>
                     <MenuButton as={Button} rightIcon={<ChevronDownIcon />} >
-                       <Text> Campaign</Text>
+                       <Heading size={'md'} className={'navtext'}>Campaign</Heading>
                     </MenuButton>
                     <MenuList>
-                        <MenuItem isDisabled> <Text>Manifesto</Text></MenuItem>
                         <MenuItem isDisabled> <Text>Feasibility-report</Text></MenuItem>
                         <MenuDivider />
                         <MenuItem isDisabled> <Text>Video Campaign</Text></MenuItem>
@@ -62,7 +61,6 @@ const Navbar = ({percentage}) => {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-          <ColorModeSwitcher justifySelf="flex-end" mx={2} />
             <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -80,18 +78,21 @@ const Navbar = ({percentage}) => {
           <Box pb={4} display={{ md: 'none' }} zIndex={10}>
             <Stack as={'nav'} spacing={4} zIndex={10}>
             <Box m={1} pt={2} px={2} >
-            <a href='#motive'><Heading size={'md'} className={'navtext'}>My Motive</Heading></a>
+            <a href='#motive'><Heading size={'md'} className={'navtext'}>Vision</Heading></a>
+                    </Box>
+                    <Box m={1} pt={2} px={2} >
+                    <a href='#'> <Heading size={'md'} className={'navtext'} isDisabled>Manifesto</Heading></a>
                     </Box>
                     <Box m={1} pt={2} px={2} >
                     <a href='#credentials'> <Heading size={'md'} className={'navtext'}>Credentials</Heading></a>
                     </Box>
+                    
                     <Box pt={2} px={2}>
                     <Menu>
                     <MenuButton as={Button} rightIcon={<ChevronDownIcon />} >
                         Campaign
                     </MenuButton>
                     <MenuList>
-                        <MenuItem isDisabled><Text>Manifesto</Text></MenuItem>
                         <MenuItem isDisabled><Text>Feasibility-report</Text></MenuItem>
                         <MenuDivider />
                         <MenuItem isDisabled><Text>Video Campaign </Text></MenuItem>

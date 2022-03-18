@@ -20,7 +20,6 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Home from './components/Home';
-import axios from 'axios'
 
 function App() {
   let { isOpen, onOpen, onClose } = useDisclosure()

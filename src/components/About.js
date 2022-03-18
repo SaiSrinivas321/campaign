@@ -1,6 +1,6 @@
 import dheeraj from "../images/dheeraj.png";
 import "../styles/styles.css"
-import React, { useState } from "react";
+import React from "react";
 import {
   Center,
   Heading,

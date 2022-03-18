@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Center, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import IMG1 from "../images/img1.png"
 import "../styles/styles.css"

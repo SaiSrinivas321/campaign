@@ -19,7 +19,6 @@ import {
   Textarea,
 } from '@chakra-ui/react';
 import CountUp from 'react-countup';
-var axios = require('axios');
 
 const SocialButton = ({ children, label, href, color }) => {
   return (
@@ -53,7 +52,6 @@ const Footer = () => {
   const [message, setmessage] = useState('');
   const [ipv, setIpv] = useState('');
 
-
   function submitForm() {
     window.open(
       `mailto:${'dheerajcs2210@gmail.com'}?subject=${encodeURIComponent(
@@ -64,29 +62,6 @@ const Footer = () => {
     );
   }
 
-  const handleClick = async () => {
-    var axios = require('axios');
-    var data = JSON.stringify({
-      id: ipv,
-    });
-
-    var config = {
-      method: 'POST',
-      url: 'http://localhost:5000/support',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      data: data,
-    };
-
-    await axios(config)
-      .then(function (response) {
-        setLike(true);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
   return (
     <Center
       width={'100%'}
@@ -134,7 +109,7 @@ const Footer = () => {
         </Text>
         <Text mb={2}>Designed by Naga Sai , Srinivas</Text>
       </Center>
-  
+
       <Center>
         <form onSubmit={submitForm}>
           <Stack

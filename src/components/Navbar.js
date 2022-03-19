@@ -41,7 +41,7 @@ const Navbar = ({percentage}) => {
                    <a href='#motive'><Heading size={'md'} className={'navtext'}>Vision</Heading></a> 
                     </Box>
                     <Box m={1} pt={2} px={2} >
-                    <a href='#'> <Heading size={'md'} className={'navtext'} isDisabled>Manifesto</Heading></a>
+                    <a href='/manifesto'> <Heading size={'md'} className={'navtext'} isDisabled>Manifesto</Heading></a>
                     </Box>
                     <Box m={1} pt={2} px={2} >
                     <a href='#credentials'> <Heading size={'md'} className={'navtext'}>Credentials</Heading></a>

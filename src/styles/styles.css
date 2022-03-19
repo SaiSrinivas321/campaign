@@ -1,142 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital,wght@1,300&family=Montserrat&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 /* .mainbg{
     background-image: url("../images/bg1.png");
     background-repeat: repeat-y ;
     background-size: contain;
 } */
-.heading{
-    font-family: 'Merriweather', serif !important;
+.heading {
+  font-family: 'Merriweather', serif !important;
 }
-.hashtag{
-    /* font-weight: 700 !important; */
-    color: #4D77FF !important;
-
+.hashtag {
+  /* font-weight: 700 !important; */
+  color: #4d77ff !important;
 }
 .typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 1.0s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 50% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    25% { border-color: orange; }
-  }
-.mainnavtext{
-    font-family: 'Lato', sans-serif !important;
-}
-.navtext{
-    font-family: 'Montserrat', sans-serif !important;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-p{
-    font-family: 'Montserrat', sans-serif;
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
 }
-.navbar{
-     position: fixed;
-     width: 100%;
-     z-index: 2;
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  25% {
+    border-color: orange;
+  }
+}
+.mainnavtext {
+  font-family: 'Lato', sans-serif !important;
+}
+.navtext {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 blockquote {
-    font-family: Georgia, serif;
-    text-align: justify;
-    position: relative;
-    margin: 0.5em;
-    padding: 0.5em 2em 0.5em 3em;
+  font-family: Georgia, serif;
+  text-align: justify;
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em 2em 0.5em 3em;
 }
 
 blockquote:before {
-    font-family: Georgia, serif;
-    position: absolute;
-    font-size: 5em;
-    line-height: 1;
-    top: 0;
-    left: 0;
-    content: "\201C";
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 5em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: '\201C';
 }
 blockquote:after {
-    font-family: Georgia, serif;
-    position: absolute;
-    float:right;
-    font-size:5em;
-    line-height: 1;
-    right:-0.1em;
-    bottom:-0.5em;
-    content: "\201D";
+  font-family: Georgia, serif;
+  position: absolute;
+  float: right;
+  font-size: 5em;
+  line-height: 1;
+  right: -0.1em;
+  bottom: -0.5em;
+  content: '\201D';
 }
 .vertical-timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 18px;
-    height: 100%;
-    width: 4px;
-    background-color: black !important;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background-color: black !important;
 }
 
-
- .vertical-timeline-element-date  {
-    color: #03045E !important;
-    font-weight: 700 !important;
-    text-align : center !important;
+.vertical-timeline-element-date {
+  color: #03045e !important;
+  font-weight: 700 !important;
+  text-align: center !important;
 }
 
-.supportus{
-    position: absolute;
-    bottom: 0px;
-    right: 0px; 
+.supportus {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
-.success-stories1{
-    background: linear-gradient(-45deg,  #23a6d5, #23d5ab);
-    color: black;
+.success-stories1 {
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+  color: black;
 }
-.success-stories2{
-    background: linear-gradient(-45deg,   #ffafbd, #ffc3a0);
-    color: black;
+.success-stories2 {
+  background: linear-gradient(-45deg, #ffafbd, #ffc3a0);
+  color: black;
 }
-.success-stories3{
-    background: linear-gradient(-45deg,  #cc2b5e, #753a88);
-    color: black;
+.success-stories3 {
+  background: linear-gradient(-45deg, #cc2b5e, #753a88);
+  color: black;
 }
-.success-stories4{
-    background: linear-gradient(-45deg, #1fa2ff,#12d8fa,#a6ffcb);
-    color: black;
-}
-
-.timeline-img{
-    max-width: "10px";
-    max-height: "8px";
+.success-stories4 {
+  background: linear-gradient(-45deg, #1fa2ff, #12d8fa, #a6ffcb);
+  color: black;
 }
 
+.timeline-img {
+  max-width: '10px';
+  max-height: '8px';
+}
 
+.ECard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+}
 
-@media only screen and (max-width: 1170px){ 
-    .vertical-timeline-element-content .vertical-timeline-element-date {
-        color: white !important;
-    }
+.overview {
+  padding: 13px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(100%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
+.ECard:hover .cardtext {
+  visibility: hidden;
+}
+
+.ECard:hover .overview {
+  transform: translateY(0);
+  border-radius: 5px;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.Manifesto {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 141.4286%;
+  padding-bottom: 48px;
+  box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+  margin-top: 1.6em;
+  margin-bottom: 0.9em;
+  overflow: hidden;
+  border-radius: 8px;
+  will-change: transform;
+}
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (max-width: 1170px) {
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    color: white !important;
+  }
 }

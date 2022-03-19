@@ -53,41 +53,6 @@ const Footer = () => {
   const [message, setmessage] = useState('');
   const [ipv, setIpv] = useState('');
 
-  React.useEffect(() => {
-
-    const getData = async () => {
-      var requestOptions = {
-        method: 'GET',
-        redirect: 'follow'
-      };
-      
-      await fetch("http://localhost:5000/count", requestOptions)
-        .then(response => response.json())
-        .then(result =>{ if(result.message){
-          setCount(result.message)
-        }})
-        .catch(error => console.log('error', error));
-
-      const res = await axios.get('https://geolocation-db.com/json/');
-      setIpv(res.data.IPv4);
-      var config = {
-        method: 'get',
-        url: `http://localhost:5000/support?id=${res.data.IPv4}`,
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      };
-  
-      await axios(config)
-        .then(function (response) {
-          if(response.data.message) setLike(response.data.message);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    };
-    getData();
-  });
 
   function submitForm() {
     window.open(
@@ -169,34 +134,7 @@ const Footer = () => {
         </Text>
         <Text mb={2}>Designed by Naga Sai , Srinivas</Text>
       </Center>
-      <Center
-        flexDirection={'column'}
-        className={window.innerWidth > 1200 && 'supportus'}
-        p={2}
-        m={2}
-        justifySelf={['flex-end']}
-      >
-        <Button
-          p={2}
-          width={'100%'}
-          leftIcon={
-            like ? <FaThumbsUp color="blue" /> : <FaRegThumbsUp color="blue" />
-          }
-          colorScheme="blue"
-          variant="solid"
-          onClick={handleClick}
-          isDisabled={like}
-        >
-          Show your Support
-        </Button>
-        <Box p={2} width={'100%'}>
-          <Center>
-            <Text fontWeight={'600'}>
-              Supporters : <strong><CountUp end={count} /></strong>
-            </Text>
-          </Center>
-        </Box>
-      </Center>
+  
       <Center>
         <form onSubmit={submitForm}>
           <Stack

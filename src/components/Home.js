@@ -19,6 +19,7 @@ import Testimonials from './Testimonials';
 import React, { useState } from 'react';
 import '../styles/styles.css';
 import Footer from './Footer';
+import ParticlesBg from 'particles-bg';
 
 const Home = () => {
   const [per, setPer] = useState(0);
@@ -61,19 +62,22 @@ const Home = () => {
     listenToScrollEvent();
   });
   React.useEffect(() => {
-    document.addEventListener('contextmenu', e => {
-      e.preventDefault();
-      setAlert(true);
-    });
-    document.onkeydown = e => {
-      if (e.ctrlKey || e.shiftKey || e.key == 'F12') {
-        e.preventDefault();
-        setAlert(true);
-      }
-    };
+    // document.addEventListener('contextmenu', e => {
+    //   e.preventDefault();
+    //   setAlert(true);
+    // });
+    // document.onkeydown = e => {
+    //   if (e.ctrlKey || e.shiftKey || e.key == 'F12') {
+    //     e.preventDefault();
+    //     setAlert(true);
+    //   }
+    // };
   });
   return (
-    <Flex flexDirection={'column'} className="mainbg">
+    <Flex flexDirection={'column'} className="mainbg" width={"100%"} id="particles-js">
+       <div className="App-particles__container">
+        <ParticlesBg  num={5} type="polygon" bg={true}/>
+        </div>
       <Flex width={'100%'} flexDirection={'column'}>
         {alertt ? (
           <AlertDialog
@@ -107,7 +111,7 @@ const Home = () => {
       <Motive />
       <Credentials />
       {/* <Lifeinitiatives /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </Flex>
   );

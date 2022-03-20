@@ -1,4 +1,4 @@
-import dheeraj from "../images/dheeraj.png";
+import dheeraj from "../images/png.webp";
 import "../styles/styles.css"
 import React from "react";
 import {
@@ -10,25 +10,18 @@ import {
 
 const About = () => {
   return(
-      <Center  maxHeight={'90vh'} flexDirection={['column','row']} marginTop={'60px'} width = {['100%','100%','80%','80%']} p={2} alignItems={'center'}>
+      <Center className="About" maxHeight={'90vh'} flexDirection={['column','row']} marginTop={'60px'} width = {['100%','100%','80%','80%']} p={2} alignItems={'center'}>
           <Center m={2} p={2} height ={'80vh'}  width = {['100%','50%']}>
-              <Image src = {dheeraj}/>
+              <Image src = {dheeraj} height={['60vh','80vh']}/>
           </Center>
           <Center  width = {['100%','50%']} height={'50vh'}>
-          <Heading
-              fontSize="xl"
-              fontWeight="bold"
-              // color={"gray.500"}
-              marginTop={2}
-            >
-           <Center flexDirection={'column'}>
-              <span><Text>Hey, My Name is</Text></span>
-              <Heading fontStyle={'italic'} className={'typewriter'}>Dheeraj</Heading>
-            <Text><strong>Lets make our saarang great again</strong></Text> 
+           <Center flexDirection={'column'} p={2}>
+              <Text my={2} fontSize="xl">I am <span className="name">C S Dheeraj</span></Text>
+              <Text my={2} fontSize="xl">Contesting for the post of </Text>
+              <Heading size={['lg']}  my={2} >Cultural Affairs Secretary<span className="name"> Lit</span></Heading>
+              <Heading size={'lg'}  my={3} fontStyle={'italic'} className={'typewriter'}>Expand. Evoke. Empower</Heading>
         
-            </Center>
-            </Heading>
-            
+            </Center>            
           </Center>
 
       </Center>

@@ -5,7 +5,9 @@ import ARC from "../images/arcade.jpg"
 import BGAMES from "../images/boardgames.jpg"
 import COMP from "../images/comp.jpg"
 import GAM from "../images/gamification.jpg"
-import GAM1 from "../images/gamification1.jpg"
+import PROM from "../images/prom.jpg"
+import GD from "../images/gd.jpg"
+
 import "../styles/styles.css"
 
 const vision = [
@@ -22,29 +24,33 @@ const vision = [
     grounds, to ramp up the Saarang Festive vibes`
   },
   {
-    title : "INTER IIT CULTURALS",
+    title : "Inter IIT Culturals",
     img : COMP,
     desc : `To augment the cultural spirit, a bid to host the Inter IIT Cultural Meet in Insti
     will be put forth.`
   },
   {
-    title : "LitSoc Gamification:",
+    title : "LitSoc Gamification",
     img : GAM,
     desc : `Hostels will be rewarded with “credits” in addition to LitSoc points to
     incentivise participation and boost overall enthusiasm.`
   },
   {
-    title : "Board Games Adda",
-    img : GAM1,
-    desc : `The board games culture in Insti will be rejuvenated and a specific venue will
-    be allotted for enthusiasts to bond over the same`
+    title : "Saarang Prom",
+    img : PROM,
+    desc : `The first ever Saarang Prom constituting an evening of food, frolic and fun will be introduced to enrich the Saarang experience.`
+  },
+  {
+    title : "LitSoc Renaissance",
+    img : GD,
+    desc : `A committee will be instituted to revitalise the on-ground experience for LitSoc Hostel Secretaries, who will be inducted by the respective hostel alumni to sustain hostel culture. `
   }
 ]
 
 const Motive = () => {
   return(
-      <Center id='motive' className="motive"  flexDirection = {'column'} p={2} m={2}>
-          <Heading m={3} className={'heading'} marginTop={"75px"}>Vision</Heading>
+      <Center id='motive' className="motive initfont"  flexDirection = {'column'} p={2} m={2}>
+          <Heading m={3} className={'heading'} marginTop={"75px"}>Initiatives</Heading>
          <Center flexDirection={'column'}>
          <SimpleGrid columns={[1,1,3,3]} spacing={10}>
           {
@@ -77,7 +83,7 @@ const Motive = () => {
           h={'300px'}
         >
           <Image
-            h={'270px'}
+            h={'260px'}
             w={'auto'}
             src={vis.img}
             p={2}
@@ -94,9 +100,9 @@ const Motive = () => {
                   fontFamily: 'Roboto',
                   zIndex: 1
                 }} >{vis.title}</Text>
-              <Box className="overview" bg={'#191e38'} color="#ffffff" m={2} p={2}>
-                <Center flexDirection={'column'} h={Number(vis.id) > 6 ? '375px' : '270'}>
-                  <Heading as={'h3'} mb={"2"} fontSize={"2xl"} >
+              <Box className="overview" bg={'white'} color="black" m={2} p={2}>
+                <Center flexDirection={'column'} h={'270'}>
+                  <Heading as={'h3'} mb={"2"} fontSize={"2xl"} fontWeight={'bold'} >
                     {vis.title}
                   </Heading>
                   <Text as={"h4"} p={4} fontSize={'sm'}

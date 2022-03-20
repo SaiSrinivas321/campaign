@@ -18,19 +18,20 @@ import {
   Switch,
   Redirect,
   Routes,
-} from "react-router-dom";
+} from 'react-router-dom';
 import Manifesto from './components/Manifesto';
+import Feasibility from './components/Feasibility';
 function App() {
-
   return (
     <ChakraProvider theme={theme}>
-      <Flex height={'100vh'}>
-      <Router>
-      <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route path="/manifesto" element={<Manifesto />} />
-      </Routes>
-      </Router>
+      <Flex>
+        <Router basename={process.env.PUBLIC_URL}>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/manifesto" element={<Manifesto />} />
+            <Route path="/feasibility" element={<Feasibility />} />
+          </Routes>
+        </Router>
       </Flex>
     </ChakraProvider>
   );

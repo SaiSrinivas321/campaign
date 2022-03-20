@@ -1,11 +1,9 @@
-import { Link, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { Heading, Link, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import {
   FaInstagram,
-  FaRegThumbsUp,
-  FaThumbsUp,
   FaEnvelope,
-  FaFacebook,
+  FaWhatsapp
 } from 'react-icons/fa';
 import {
   Box,
@@ -30,6 +28,7 @@ const SocialButton = ({ children, label, href, color }) => {
       cursor={'pointer'}
       as={'a'}
       href={href}
+      target = {'_blank'}
       display={'inline-flex'}
       alignItems={'center'}
       justifyContent={'center'}
@@ -50,11 +49,10 @@ const Footer = () => {
   const [email, setemail] = useState('');
   const [subject, setsubject] = useState('');
   const [message, setmessage] = useState('');
-  const [ipv, setIpv] = useState('');
 
   function submitForm() {
     window.open(
-      `mailto:${'dheerajcs2210@gmail.com'}?subject=${encodeURIComponent(
+      `mailto:${'srinivas.32194@gmail.com'}?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(name)} (${encodeURIComponent(
         email
@@ -66,12 +64,86 @@ const Footer = () => {
     <Center
       width={'100%'}
       style={{ position: 'relative' }}
-      flexDirection={['column-reverse', 'column-reverse', 'row', 'row']}
-      p={2}
+      flexDirection={'column'}
+      p={3}
       bg={useColorModeValue('gray.50', 'gray.900')}
     >
+      <Center width={'100%'} flexDirection={'column'} p={2}>
+        {/* <Heading>Any Queries?</Heading> */}
+      {/* <form onSubmit={submitForm} style={{width : '60%'}}>
+                <Stack
+                width={'100%'}
+                  spacing={8}
+                  m={3}
+                  marginBottom={5}
+                  paddingLeft={2}
+                  paddingRight={2}
+                >
+                  <Input
+                    placeholder='Name'
+                    _placeholder={{ color: 'gray.500' }}
+                    color='black'
+                    type='text'
+                    id='name'
+                    name='name'
+                    value={name}
+                    onChange={(e) => setname(e.target.value)}
+                    padding={2}
+                  />
+                  <Input
+                    placeholder='Email'
+                    _placeholder={{ color: 'gray.500' }}
+                    color='black'
+                    type='email'
+                    id='email'
+                    name='email'
+                    value={email}
+                    onChange={(e) => setemail(e.target.value)}
+                    padding={2}
+                  />
+                  <Input
+                    placeholder='Subject'
+                    _placeholder={{ color: 'gray.500' }}
+                    color='black'
+                    type='text'
+                    id='subject'
+                    name='subject'
+                    value={subject}
+                    onChange={(e) => setsubject(e.target.value)}
+                    padding={2}
+                  />
+                  <Textarea
+                    placeholder='Message'
+                    _placeholder={{ color: 'gray.500' }}
+                    color='black'
+                    type='text'
+                    id='message'
+                    name='message'
+                    value={message}
+                    onChange={(e) => setmessage(e.target.value)}
+                    padding={2}
+                  />
+                </Stack>
+               <Center>
+               <Button
+                  width={'25%'}
+                  color='white'
+                  colorScheme={'blue'}
+                  marginTop={3}
+                  marginBottom={5}
+                  className='submit-btn'
+                  onClick={submitForm}
+                  type='submit'
+                >
+                  Send
+                </Button>
+               </Center>
+              </form> */}
+      </Center>
       <Center flexDirection={'column'}>
-        <Box color={useColorModeValue('gray.700', 'gray.200')} width={'100%'}>
+        <Text mb={2}>Designed by Naga Sai , Srinivas</Text>
+      </Center>
+      <Box color={useColorModeValue('gray.700', 'gray.200')} width={'100%'}>
           <Container
             as={Stack}
             // maxW={'6xl'}
@@ -83,108 +155,25 @@ const Footer = () => {
           >
             <Text>© All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Twitter'} href={'#'}>
+            <a href="mailto:dheerajcs2210@gmail.com">
+              <SocialButton label={'Twitter'}>
                 <Icon as={FaEnvelope} w={5} h={5} _hover={{ color: 'red' }} />
               </SocialButton>
-              <SocialButton label={'YouTube'} href={'#'}>
+              </a>
+              <SocialButton label={'Instagram'} href={'https://instagram.com/culseclit_csdheeraj?utm_medium=copy_link'}>
                 <Icon as={FaInstagram} w={5} h={5} _hover={{ color: 'pink' }} />
               </SocialButton>
-              <SocialButton label={'Instagram'} href={'#'}>
+              <SocialButton label={'Whats app'} href={'https://wa.me/917337493297'}>
                 <Icon
-                  as={FaFacebook}
+                  as={FaWhatsapp}
                   w={5}
                   h={5}
-                  _hover={{ color: 'blue.400' }}
+                  _hover={{ color: '#075e54' }}
                 />
               </SocialButton>
             </Stack>
           </Container>
         </Box>
-        <Text m={2}>
-          {' '}
-          Join{' '}
-          <span>
-            <Link>Campaign</Link>
-          </span>
-        </Text>
-        <Text mb={2}>Designed by Naga Sai , Srinivas</Text>
-      </Center>
-
-      <Center>
-        <form onSubmit={submitForm}>
-          <Stack
-            spacing={8}
-            m={3}
-            marginBottom={5}
-            paddingLeft={2}
-            paddingRight={2}
-          >
-            <Input
-              variant="flushed"
-              placeholder="Name"
-              _placeholder={{ color: 'gray.500' }}
-              color="black"
-              type="text"
-              id="name"
-              name="name"
-              value={name}
-              onChange={e => setname(e.target.value)}
-              borderBottomColor="black"
-              padding={2}
-            />
-            <Input
-              variant="flushed"
-              placeholder="Email"
-              _placeholder={{ color: 'gray.500' }}
-              color="black"
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={e => setemail(e.target.value)}
-              borderBottomColor="black"
-              padding={2}
-            />
-            <Input
-              variant="flushed"
-              placeholder="Subject"
-              _placeholder={{ color: 'gray.500' }}
-              color="black"
-              type="text"
-              id="subject"
-              name="subject"
-              value={subject}
-              onChange={e => setsubject(e.target.value)}
-              borderBottomColor="black"
-              padding={2}
-            />
-            <Textarea
-              variant="flushed"
-              placeholder="Message"
-              _placeholder={{ color: 'gray.500' }}
-              color="black"
-              type="text"
-              id="message"
-              name="message"
-              value={message}
-              onChange={e => setmessage(e.target.value)}
-              borderBottomColor="black"
-              padding={2}
-            />
-          </Stack>
-          <Button
-            color="black"
-            backgroundColor="#ff7e20"
-            marginTop={3}
-            marginBottom={5}
-            className="submit-btn"
-            onClick={submitForm}
-            type="submit"
-          >
-            Submit
-          </Button>
-        </form>
-      </Center>
     </Center>
   );
 };

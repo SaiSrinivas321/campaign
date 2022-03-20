@@ -43,7 +43,7 @@ const Navbar = ({percentage}) => {
                    <a href='#motive'><Heading size={'md'} className={'navtext'}>Initiatives</Heading></a> 
                     </Box>
                     <Box m={1} pt={2} px={2} >
-                    <a href='/manifesto' target={'_blank'}> <Heading size={'md'} className={'navtext'}>Manifesto</Heading></a>
+                    <a href='/dheerajforcul/manifesto' target={'_blank'}> <Heading size={'md'} className={'navtext'}>Manifesto</Heading></a>
                     </Box>
                     <Box m={1} pt={2} px={2} >
                     <a href='#credentials'> <Heading size={'md'} className={'navtext'}>Credentials</Heading></a>
@@ -54,7 +54,7 @@ const Navbar = ({percentage}) => {
                        <Heading size={'md'} className={'navtext'}>Campaign</Heading>
                     </MenuButton>
                     <MenuList>
-                    <a href='/feasibility' target={'_blank'}> <MenuItem> <Text>Feasibility-report</Text></MenuItem></a>
+                    <a href='/dheerajforcul/feasibility' target={'_blank'}> <MenuItem> <Text>Feasibility-report</Text></MenuItem></a>
                     <MenuItem isDisabled> <Text>Video Campaign</Text></MenuItem>
                         <MenuDivider />
                         <a href={'https://wa.me/917337493297'} target={'_blank'}><MenuItem> <Icon as={FaWhatsapp} my={1} mx={2} boxSize={'5'}/><Text p={2}>Contact</Text></MenuItem></a>
@@ -85,7 +85,7 @@ const Navbar = ({percentage}) => {
             <a href='#motive'><Heading size={'md'} className={'navtext'}>Initiatives</Heading></a>
                     </Box>
                     <Box m={1} pt={2} px={2} onClick={onClose}>
-                    <a href='/manifesto' target={'_blank'}> <Heading size={'md'} className={'navtext'}>Manifesto</Heading></a>
+                    <a href='/dheerajforcul/manifesto' target={'_blank'}> <Heading size={'md'} className={'navtext'}>Manifesto</Heading></a>
                     </Box>
                     <Box m={1} pt={2} px={2} onClick={onClose} >
                     <a href='#credentials'> <Heading size={'md'} className={'navtext'}>Credentials</Heading></a>
@@ -97,7 +97,7 @@ const Navbar = ({percentage}) => {
                        <Heading size={'md'} className={'navtext'}>Campaign</Heading>
                     </MenuButton>
                     <MenuList>
-                    <a href='/feasibility' target={'_blank'}> <MenuItem onClick={onClose}> <Text>Feasibility-report</Text></MenuItem></a>
+                    <a href='/dheerajforcul/feasibility' target={'_blank'}> <MenuItem onClick={onClose}> <Text>Feasibility-report</Text></MenuItem></a>
                     <MenuItem isDisabled> <Text>Video Campaign</Text></MenuItem>
                         <MenuDivider />
                         <a href={'https://wa.me/917337493297'} target={'_blank'}><MenuItem onClick={onClose} ><Icon as={FaWhatsapp} my={1} mx={2} boxSize={'5'} /> <Text p={2}>Join Campaign</Text></MenuItem></a>

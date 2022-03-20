@@ -27,9 +27,9 @@ function App() {
       <Flex>
         <Router basename={process.env.PUBLIC_URL}>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/manifesto" element={<Manifesto />} />
-            <Route path="/feasibility" element={<Feasibility />} />
+            <Route exact path="/dheerajforcul/" element={<Home />} />
+            <Route path="/dheerajforcul/manifesto" element={<Manifesto />} />
+            <Route path="/dheerajforcul/feasibility" element={<Feasibility />} />
           </Routes>
         </Router>
       </Flex>

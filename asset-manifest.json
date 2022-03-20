@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/dheeraj/static/css/main.357d2dab.css",
+    "main.js": "/dheeraj/static/js/main.60ee79d1.js",
+    "static/js/377.c7674f02.chunk.js": "/dheeraj/static/js/377.c7674f02.chunk.js",
+    "static/media/feasibility.pdf": "/dheeraj/static/media/feasibility.dc3d04fd38729af25b2c.pdf",
+    "static/media/png.webp": "/dheeraj/static/media/png.e39bf0c257a0dc8cc65b.webp",
+    "static/media/gamification.jpg": "/dheeraj/static/media/gamification.6c9028937749bbab84dd.jpg",
+    "static/media/arcade.jpg": "/dheeraj/static/media/arcade.2b5a308469ea606a8564.jpg",
+    "static/media/comp.jpg": "/dheeraj/static/media/comp.47e6e5a689a555f00a21.jpg",
+    "static/media/prom.jpg": "/dheeraj/static/media/prom.8263e8e39c4d0b66175d.jpg",
+    "static/media/boardgames.jpg": "/dheeraj/static/media/boardgames.91022fac99b3dc7ee0e9.jpg",
+    "static/media/img1.png": "/dheeraj/static/media/img1.aee24d97bbd2d1e60752.png",
+    "static/media/gd.jpg": "/dheeraj/static/media/gd.36113cde73a9399a9da1.jpg",
+    "index.html": "/dheeraj/index.html",
+    "main.357d2dab.css.map": "/dheeraj/static/css/main.357d2dab.css.map",
+    "main.60ee79d1.js.map": "/dheeraj/static/js/main.60ee79d1.js.map",
+    "377.c7674f02.chunk.js.map": "/dheeraj/static/js/377.c7674f02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.357d2dab.css",
+    "static/js/main.60ee79d1.js"
+  ]
+}

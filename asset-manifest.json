@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/dheerajforcul/static/css/main.357d2dab.css",
-    "main.js": "/dheerajforcul/static/js/main.45a9f900.js",
-    "static/js/377.c7674f02.chunk.js": "/dheerajforcul/static/js/377.c7674f02.chunk.js",
-    "static/media/feasibility.pdf": "/dheerajforcul/static/media/feasibility.dc3d04fd38729af25b2c.pdf",
-    "static/media/png.webp": "/dheerajforcul/static/media/png.e39bf0c257a0dc8cc65b.webp",
-    "static/media/gamification.jpg": "/dheerajforcul/static/media/gamification.6c9028937749bbab84dd.jpg",
-    "static/media/arcade.jpg": "/dheerajforcul/static/media/arcade.2b5a308469ea606a8564.jpg",
-    "static/media/comp.jpg": "/dheerajforcul/static/media/comp.47e6e5a689a555f00a21.jpg",
-    "static/media/prom.jpg": "/dheerajforcul/static/media/prom.8263e8e39c4d0b66175d.jpg",
-    "static/media/boardgames.jpg": "/dheerajforcul/static/media/boardgames.91022fac99b3dc7ee0e9.jpg",
-    "static/media/img1.png": "/dheerajforcul/static/media/img1.aee24d97bbd2d1e60752.png",
-    "static/media/gd.jpg": "/dheerajforcul/static/media/gd.36113cde73a9399a9da1.jpg",
-    "index.html": "/dheerajforcul/index.html",
-    "main.357d2dab.css.map": "/dheerajforcul/static/css/main.357d2dab.css.map",
-    "main.45a9f900.js.map": "/dheerajforcul/static/js/main.45a9f900.js.map",
-    "377.c7674f02.chunk.js.map": "/dheerajforcul/static/js/377.c7674f02.chunk.js.map"
+    "main.css": "/static/css/main.357d2dab.css",
+    "main.js": "/static/js/main.dc6d1529.js",
+    "static/js/377.c7674f02.chunk.js": "/static/js/377.c7674f02.chunk.js",
+    "static/media/feasibility.pdf": "/static/media/feasibility.dc3d04fd38729af25b2c.pdf",
+    "static/media/png.webp": "/static/media/png.e39bf0c257a0dc8cc65b.webp",
+    "static/media/gamification.jpg": "/static/media/gamification.6c9028937749bbab84dd.jpg",
+    "static/media/arcade.jpg": "/static/media/arcade.2b5a308469ea606a8564.jpg",
+    "static/media/comp.jpg": "/static/media/comp.47e6e5a689a555f00a21.jpg",
+    "static/media/prom.jpg": "/static/media/prom.8263e8e39c4d0b66175d.jpg",
+    "static/media/boardgames.jpg": "/static/media/boardgames.91022fac99b3dc7ee0e9.jpg",
+    "static/media/img1.png": "/static/media/img1.aee24d97bbd2d1e60752.png",
+    "static/media/gd.jpg": "/static/media/gd.36113cde73a9399a9da1.jpg",
+    "index.html": "/index.html",
+    "main.357d2dab.css.map": "/static/css/main.357d2dab.css.map",
+    "main.dc6d1529.js.map": "/static/js/main.dc6d1529.js.map",
+    "377.c7674f02.chunk.js.map": "/static/js/377.c7674f02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.357d2dab.css",
-    "static/js/main.45a9f900.js"
+    "static/js/main.dc6d1529.js"
   ]
 }

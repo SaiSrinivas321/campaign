@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Center, Flex, Heading, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
-import IMG1 from "../images/img1.png"
+import { Box, Center, Heading, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import ARC from "../images/arcade.jpg"
 import BGAMES from "../images/boardgames.jpg"
 import COMP from "../images/comp.jpg"

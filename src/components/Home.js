@@ -15,7 +15,6 @@ import About from './About';
 import Credentials from './Credentials';
 import Motive from './Motive';
 import Navbar from './Navbar';
-import Testimonials from './Testimonials';
 import React, { useState } from 'react';
 import '../styles/styles.css';
 import Footer from './Footer';
@@ -23,7 +22,7 @@ import ParticlesBg from 'particles-bg';
 
 const Home = () => {
   const [per, setPer] = useState(0);
-  let { isOpen, onOpen, onClose } = useDisclosure();
+  let { onClose } = useDisclosure();
   const cancelRef = React.useRef();
   onClose = () => {
     window.location.reload();
@@ -58,20 +57,20 @@ const Home = () => {
     });
   };
 
-  React.useEffect(async () => {
+  React.useEffect(() => {
     listenToScrollEvent();
   });
   React.useEffect(() => {
-    // document.addEventListener('contextmenu', e => {
-    //   e.preventDefault();
-    //   setAlert(true);
-    // });
-    // document.onkeydown = e => {
-    //   if (e.ctrlKey || e.shiftKey || e.key == 'F12') {
-    //     e.preventDefault();
-    //     setAlert(true);
-    //   }
-    // };
+    document.addEventListener('contextmenu', e => {
+      e.preventDefault();
+      setAlert(true);
+    });
+    document.onkeydown = e => {
+      if (e.ctrlKey || e.shiftKey || e.key === 'F12') {
+        e.preventDefault();
+        setAlert(true);
+      }
+    };
   });
   return (
     <Flex flexDirection={'column'} className="mainbg" width={"100%"} id="particles-js">

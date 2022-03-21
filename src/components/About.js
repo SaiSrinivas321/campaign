@@ -10,9 +10,9 @@ import {
 
 const About = () => {
   return(
-      <Center className="About" maxHeight={'90vh'} flexDirection={['column','row']} marginTop={'60px'} width = {['100%','100%','80%','80%']} p={2} alignItems={'center'}>
-          <Center m={2} p={2} height ={'80vh'}  width = {['100%','50%']}>
-              <Image src = {dheeraj} height={['60vh','80vh']}/>
+      <Center className="About" maxHeight={'90vh'} flexDirection={['column','column','column','row']} marginTop={'60px'} width = {['100%','100%','80%','80%']} p={2} alignItems={'center'}>
+          <Center m={2} p={2} height ={['100vh','100vh','80vh']}  width = {['100%','100%','100%','60%']}>
+              <Image src = {dheeraj} height={['60vh','70vh','70vh','80vh']}/>
           </Center>
           <Center  width = {['100%','50%']} height={'50vh'}>
            <Center flexDirection={'column'} p={2}>

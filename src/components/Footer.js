@@ -1,22 +1,15 @@
-import { Heading, Link, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
-import React, { useState } from 'react';
-import {
-  FaInstagram,
-  FaEnvelope,
-  FaWhatsapp
-} from 'react-icons/fa';
+import { useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import React from 'react';
+import { FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import {
   Box,
   Center,
   Container,
-  Input,
   Stack,
   Button,
   Text,
   Icon,
-  Textarea,
 } from '@chakra-ui/react';
-import CountUp from 'react-countup';
 
 const SocialButton = ({ children, label, href, color }) => {
   return (
@@ -28,7 +21,7 @@ const SocialButton = ({ children, label, href, color }) => {
       cursor={'pointer'}
       as={'a'}
       href={href}
-      target = {'_blank'}
+      target={'_blank'}
       display={'inline-flex'}
       alignItems={'center'}
       justifyContent={'center'}
@@ -43,22 +36,20 @@ const SocialButton = ({ children, label, href, color }) => {
   );
 };
 const Footer = () => {
-  const [count, setCount] = useState(0);
-  const [like, setLike] = useState(false);
-  const [name, setname] = useState('');
-  const [email, setemail] = useState('');
-  const [subject, setsubject] = useState('');
-  const [message, setmessage] = useState('');
+  // const [name, setname] = useState('');
+  // const [email, setemail] = useState('');
+  // const [subject, setsubject] = useState('');
+  // const [message, setmessage] = useState('');
 
-  function submitForm() {
-    window.open(
-      `mailto:${'srinivas.32194@gmail.com'}?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(name)} (${encodeURIComponent(
-        email
-      )}): ${encodeURIComponent(message)}`
-    );
-  }
+  // function submitForm() {
+  //   window.open(
+  //     `mailto:${'srinivas.32194@gmail.com'}?subject=${encodeURIComponent(
+  //       subject
+  //     )}&body=${encodeURIComponent(name)} (${encodeURIComponent(
+  //       email
+  //     )}): ${encodeURIComponent(message)}`
+  //   );
+  // }
 
   return (
     <Center
@@ -70,7 +61,7 @@ const Footer = () => {
     >
       <Center width={'100%'} flexDirection={'column'} p={2}>
         {/* <Heading>Any Queries?</Heading> */}
-      {/* <form onSubmit={submitForm} style={{width : '60%'}}>
+        {/* <form onSubmit={submitForm} style={{width : '60%'}}>
                 <Stack
                 width={'100%'}
                   spacing={8}
@@ -144,36 +135,39 @@ const Footer = () => {
         <Text mb={2}>Designed by Naga Sai , Srinivas</Text>
       </Center>
       <Box color={useColorModeValue('gray.700', 'gray.200')} width={'100%'}>
-          <Container
-            as={Stack}
-            // maxW={'6xl'}
-            py={4}
-            direction={{ base: 'column', md: 'row' }}
-            spacing={4}
-            justify={{ base: 'center' }}
-            align={{ base: 'center', md: 'center' }}
-          >
-            <Text>© All rights reserved</Text>
-            <Stack direction={'row'} spacing={6}>
+        <Container
+          as={Stack}
+          // maxW={'6xl'}
+          py={4}
+          direction={{ base: 'column', md: 'row' }}
+          spacing={4}
+          justify={{ base: 'center' }}
+          align={{ base: 'center', md: 'center' }}
+        >
+          <Text>© All rights reserved</Text>
+          <Stack direction={'row'} spacing={6}>
             <a href="mailto:dheerajcs2210@gmail.com">
               <SocialButton label={'Twitter'}>
                 <Icon as={FaEnvelope} w={5} h={5} _hover={{ color: 'red' }} />
               </SocialButton>
-              </a>
-              <SocialButton label={'Instagram'} href={'https://instagram.com/culseclit_csdheeraj?utm_medium=copy_link'}>
-                <Icon as={FaInstagram} w={5} h={5} _hover={{ color: 'pink' }} />
-              </SocialButton>
-              <SocialButton label={'Whats app'} href={'https://wa.me/917337493297'}>
-                <Icon
-                  as={FaWhatsapp}
-                  w={5}
-                  h={5}
-                  _hover={{ color: '#075e54' }}
-                />
-              </SocialButton>
-            </Stack>
-          </Container>
-        </Box>
+            </a>
+            <SocialButton
+              label={'Instagram'}
+              href={
+                'https://instagram.com/culseclit_csdheeraj?utm_medium=copy_link'
+              }
+            >
+              <Icon as={FaInstagram} w={5} h={5} _hover={{ color: 'pink' }} />
+            </SocialButton>
+            <SocialButton
+              label={'Whats app'}
+              href={'https://wa.me/917337493297'}
+            >
+              <Icon as={FaWhatsapp} w={5} h={5} _hover={{ color: '#075e54' }} />
+            </SocialButton>
+          </Stack>
+        </Container>
+      </Box>
     </Center>
   );
 };

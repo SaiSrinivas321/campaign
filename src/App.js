@@ -1,24 +1,7 @@
-import React, { useState } from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-  Flex,
-} from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
+import React from 'react';
+import { ChakraProvider, theme, Flex } from '@chakra-ui/react';
 import Home from './components/Home';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-  Routes,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Manifesto from './components/Manifesto';
 import Feasibility from './components/Feasibility';
 function App() {
@@ -27,9 +10,9 @@ function App() {
       <Flex>
         <Router basename={process.env.PUBLIC_URL}>
           <Routes>
-            <Route exact path="/dheerajforcul/" element={<Home />} />
-            <Route path="/dheerajforcul/manifesto" element={<Manifesto />} />
-            <Route path="/dheerajforcul/feasibility" element={<Feasibility />} />
+            <Route exact path="/" element={<Home />} />
+            <Route path="/manifesto" element={<Manifesto />} />
+            <Route path="/feasibility" element={<Feasibility />} />
           </Routes>
         </Router>
       </Flex>

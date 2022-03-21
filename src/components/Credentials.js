@@ -57,6 +57,14 @@ const gencred = [
   },
 ];
 const Credentials = () => {
+  const [animate,setAnimate] = React.useState()
+  React.useEffect(()=>{
+    if(window.innerWidth > 1169){
+      setAnimate(true)
+    }else{
+      setAnimate(false)
+    }
+  },[])
   return (
     <>
       <Center
@@ -70,7 +78,7 @@ const Credentials = () => {
         <Heading m={2} className="heading" marginTop={'75px'}>
           Cultural Credentials
         </Heading>
-        <VerticalTimeline>
+        <VerticalTimeline animate = {animate}>
           {culcred.map(cred => (
             <VerticalTimelineElement
               contentStyle={{ background: cred.color, color: 'black' }}
@@ -85,7 +93,7 @@ const Credentials = () => {
         <Heading m={2} className="heading" color={'#03045E'}>
           Gen Credentials
         </Heading>
-        <VerticalTimeline>
+        <VerticalTimeline animate = {animate}>
           {gencred.map(cred => (
             <VerticalTimelineElement
               contentStyle={{ background: cred.color, color: 'black' }}

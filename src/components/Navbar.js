@@ -54,10 +54,10 @@ const Navbar = ({percentage}) => {
                        <Heading size={'md'} className={'navtext'}>Campaign</Heading>
                     </MenuButton>
                     <MenuList>
-                    <a href='/dheerajforcul/feasibility' target={'_blank'}> <MenuItem> <Text>Feasibility-report</Text></MenuItem></a>
+                    <a href='/dheerajforcul/feasibility' target={'_blank'} ref='noreferrer'> <MenuItem> <Text>Feasibility-report</Text></MenuItem></a>
                     <MenuItem isDisabled> <Text>Video Campaign</Text></MenuItem>
                         <MenuDivider />
-                        <a href={'https://wa.me/917337493297'} target={'_blank'}><MenuItem> <Icon as={FaWhatsapp} my={1} mx={2} boxSize={'5'}/><Text p={2}>Contact</Text></MenuItem></a>
+                        <a href={'https://wa.me/917337493297'} target={'_blank'} rel='noreferrer'><MenuItem> <Icon as={FaWhatsapp} my={1} mx={2} boxSize={'5'}/><Text p={2}>Contact</Text></MenuItem></a>
   
                     </MenuList>
                     </Menu>
@@ -97,10 +97,10 @@ const Navbar = ({percentage}) => {
                        <Heading size={'md'} className={'navtext'}>Campaign</Heading>
                     </MenuButton>
                     <MenuList>
-                    <a href='/dheerajforcul/feasibility' target={'_blank'}> <MenuItem onClick={onClose}> <Text>Feasibility-report</Text></MenuItem></a>
+                    <a href='/dheerajforcul/feasibility' target={'_blank'} rel={'noreferrer'} > <MenuItem onClick={onClose}> <Text>Feasibility-report</Text></MenuItem></a>
                     <MenuItem isDisabled> <Text>Video Campaign</Text></MenuItem>
                         <MenuDivider />
-                        <a href={'https://wa.me/917337493297'} target={'_blank'}><MenuItem onClick={onClose} ><Icon as={FaWhatsapp} my={1} mx={2} boxSize={'5'} /> <Text p={2}>Join Campaign</Text></MenuItem></a>
+                        <a href={'https://wa.me/917337493297'} target={'_blank'} rel={'noreferrer'}><MenuItem onClick={onClose} ><Icon as={FaWhatsapp} my={1} mx={2} boxSize={'5'} /> <Text p={2}>Contact</Text></MenuItem></a>
   
                     </MenuList>
                     </Menu>

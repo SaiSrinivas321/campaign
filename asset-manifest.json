@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/dheerajforcul/static/css/main.357d2dab.css",
-    "main.js": "/dheerajforcul/static/js/main.991afbc7.js",
+    "main.js": "/dheerajforcul/static/js/main.721d550a.js",
     "static/js/377.c7674f02.chunk.js": "/dheerajforcul/static/js/377.c7674f02.chunk.js",
     "static/media/feasibility.pdf": "/dheerajforcul/static/media/feasibility.dc3d04fd38729af25b2c.pdf",
     "static/media/png.webp": "/dheerajforcul/static/media/png.e39bf0c257a0dc8cc65b.webp",
-    "static/media/gamification.jpg": "/dheerajforcul/static/media/gamification.6c9028937749bbab84dd.jpg",
-    "static/media/arcade.jpg": "/dheerajforcul/static/media/arcade.2b5a308469ea606a8564.jpg",
-    "static/media/comp.jpg": "/dheerajforcul/static/media/comp.47e6e5a689a555f00a21.jpg",
-    "static/media/prom.jpg": "/dheerajforcul/static/media/prom.8263e8e39c4d0b66175d.jpg",
-    "static/media/boardgames.jpg": "/dheerajforcul/static/media/boardgames.91022fac99b3dc7ee0e9.jpg",
+    "static/media/comp.webp": "/dheerajforcul/static/media/comp.cca6a9117e1e1d039629.webp",
+    "static/media/arcade.webp": "/dheerajforcul/static/media/arcade.9084555f955b13fccc62.webp",
+    "static/media/prom.webp": "/dheerajforcul/static/media/prom.5ae4acdd5fd950e73e8a.webp",
+    "static/media/gamification.webp": "/dheerajforcul/static/media/gamification.8a536be814885e366484.webp",
+    "static/media/boardgames.webp": "/dheerajforcul/static/media/boardgames.58acc69d981ec67adf8b.webp",
     "static/media/gd.jpg": "/dheerajforcul/static/media/gd.36113cde73a9399a9da1.jpg",
     "index.html": "/dheerajforcul/index.html",
     "main.357d2dab.css.map": "/dheerajforcul/static/css/main.357d2dab.css.map",
-    "main.991afbc7.js.map": "/dheerajforcul/static/js/main.991afbc7.js.map",
+    "main.721d550a.js.map": "/dheerajforcul/static/js/main.721d550a.js.map",
     "377.c7674f02.chunk.js.map": "/dheerajforcul/static/js/377.c7674f02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.357d2dab.css",
-    "static/js/main.991afbc7.js"
+    "static/js/main.721d550a.js"
   ]
 }

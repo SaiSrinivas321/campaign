@@ -73,7 +73,7 @@ const Motive = () => {
 
           //     </Flex>
           // </Center>
-          <Box  className="ECard">
+          <Box  className="ECard" key={ind}>
              <Box
           maxW={'300px'}
           w={'full'}

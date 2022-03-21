@@ -146,11 +146,11 @@ const Footer = () => {
         >
           <Text>© All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-            <a href="mailto:dheerajcs2210@gmail.com">
-              <SocialButton label={'Twitter'}>
+           
+              <SocialButton label={'Twitter'} href="mailto:dheerajcs2210@gmail.com">
                 <Icon as={FaEnvelope} w={5} h={5} _hover={{ color: 'red' }} />
               </SocialButton>
-            </a>
+          
             <SocialButton
               label={'Instagram'}
               href={

@@ -33,7 +33,7 @@ const Navbar = ({percentage}) => {
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'} px={2}>
           <HStack spacing={8} alignItems={'center'}>
           <a href="/" _hover = {{ textDecoration : 'none'}} >
-            <Heading size={'lg'}  >#<span style ={{'font-weight': 800,'color' : 'orange'}}>C</span>ul<span style ={{'font-weight': 800,'color' : '#32CD32'}}>S</span>ec<span style ={{'font-weight': 800,'color' : '#87CEEB'}}>D</span>heeraj</Heading>
+            <Heading size={'lg'}  >#<span style ={{'fontWeight': 800,'color' : 'orange'}}>C</span>ul<span style ={{'fontWeight': 800,'color' : '#32CD32'}}>S</span>ec<span style ={{'fontWeight': 800,'color' : '#87CEEB'}}>D</span>heeraj</Heading>
              </a>
             <HStack
               as={'nav'}
@@ -54,7 +54,7 @@ const Navbar = ({percentage}) => {
                        <Heading size={'md'} className={'navtext'}>Campaign</Heading>
                     </MenuButton>
                     <MenuList>
-                    <a href='/dheerajforcul/feasibility' target={'_blank'} ref='noreferrer'> <MenuItem> <Text>Feasibility-report</Text></MenuItem></a>
+                    <a href='/dheerajforcul/feasibility' target={'_blank'} rel='noreferrer'> <MenuItem> <Text>Feasibility-report</Text></MenuItem></a>
                     <MenuItem isDisabled> <Text>Video Campaign</Text></MenuItem>
                         <MenuDivider />
                         <a href={'https://wa.me/917337493297'} target={'_blank'} rel='noreferrer'><MenuItem> <Icon as={FaWhatsapp} my={1} mx={2} boxSize={'5'}/><Text p={2}>Contact</Text></MenuItem></a>

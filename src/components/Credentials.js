@@ -81,6 +81,7 @@ const Credentials = () => {
         <VerticalTimeline animate = {animate}>
           {culcred.map(cred => (
             <VerticalTimelineElement
+             key={cred.title}
               contentStyle={{ background: cred.color, color: 'black' }}
               contentArrowStyle={{ borderRight: `7px solid ${cred.color} ` }}
               date={cred.year}
@@ -96,6 +97,7 @@ const Credentials = () => {
         <VerticalTimeline animate = {animate}>
           {gencred.map(cred => (
             <VerticalTimelineElement
+             key={cred.title}
               contentStyle={{ background: cred.color, color: 'black' }}
               contentArrowStyle={{ borderRight: `7px solid ${cred.color}` }}
               date={cred.year}

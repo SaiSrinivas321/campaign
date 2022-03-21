@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/dheerajforcul/static/css/main.357d2dab.css",
-    "main.js": "/dheerajforcul/static/js/main.6be01712.js",
-    "static/js/377.c7674f02.chunk.js": "/dheerajforcul/static/js/377.c7674f02.chunk.js",
-    "static/media/feasibility.pdf": "/dheerajforcul/static/media/feasibility.dc3d04fd38729af25b2c.pdf",
-    "static/media/png.webp": "/dheerajforcul/static/media/png.e39bf0c257a0dc8cc65b.webp",
-    "static/media/comp.webp": "/dheerajforcul/static/media/comp.cca6a9117e1e1d039629.webp",
-    "static/media/arcade.webp": "/dheerajforcul/static/media/arcade.9084555f955b13fccc62.webp",
-    "static/media/prom.webp": "/dheerajforcul/static/media/prom.5ae4acdd5fd950e73e8a.webp",
-    "static/media/gamification.webp": "/dheerajforcul/static/media/gamification.8a536be814885e366484.webp",
-    "static/media/boardgames.webp": "/dheerajforcul/static/media/boardgames.58acc69d981ec67adf8b.webp",
-    "static/media/gd.webp": "/dheerajforcul/static/media/gd.a106d1e77a5230ca64b1.webp",
-    "index.html": "/dheerajforcul/index.html",
-    "main.357d2dab.css.map": "/dheerajforcul/static/css/main.357d2dab.css.map",
-    "main.6be01712.js.map": "/dheerajforcul/static/js/main.6be01712.js.map",
-    "377.c7674f02.chunk.js.map": "/dheerajforcul/static/js/377.c7674f02.chunk.js.map"
+    "main.css": "/campaign/static/css/main.edc0eeec.css",
+    "main.js": "/campaign/static/js/main.127ddf0b.js",
+    "static/js/377.c7674f02.chunk.js": "/campaign/static/js/377.c7674f02.chunk.js",
+    "static/media/feasibility.pdf": "/campaign/static/media/feasibility.dc3d04fd38729af25b2c.pdf",
+    "static/media/dheeraj.png": "/campaign/static/media/dheeraj.539f87dc6d9e295b620f.png",
+    "static/media/comp.webp": "/campaign/static/media/comp.cca6a9117e1e1d039629.webp",
+    "static/media/arcade.webp": "/campaign/static/media/arcade.9084555f955b13fccc62.webp",
+    "static/media/prom.webp": "/campaign/static/media/prom.5ae4acdd5fd950e73e8a.webp",
+    "static/media/gamification.webp": "/campaign/static/media/gamification.8a536be814885e366484.webp",
+    "static/media/boardgames.webp": "/campaign/static/media/boardgames.58acc69d981ec67adf8b.webp",
+    "static/media/gd.webp": "/campaign/static/media/gd.a106d1e77a5230ca64b1.webp",
+    "index.html": "/campaign/index.html",
+    "main.edc0eeec.css.map": "/campaign/static/css/main.edc0eeec.css.map",
+    "main.127ddf0b.js.map": "/campaign/static/js/main.127ddf0b.js.map",
+    "377.c7674f02.chunk.js.map": "/campaign/static/js/377.c7674f02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.357d2dab.css",
-    "static/js/main.6be01712.js"
+    "static/css/main.edc0eeec.css",
+    "static/js/main.127ddf0b.js"
   ]
 }

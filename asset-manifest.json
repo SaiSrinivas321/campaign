@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dheerajforcul/static/css/main.357d2dab.css",
-    "main.js": "/dheerajforcul/static/js/main.969e410a.js",
+    "main.js": "/dheerajforcul/static/js/main.cfa15ccd.js",
     "static/js/377.c7674f02.chunk.js": "/dheerajforcul/static/js/377.c7674f02.chunk.js",
     "static/media/feasibility.pdf": "/dheerajforcul/static/media/feasibility.dc3d04fd38729af25b2c.pdf",
     "static/media/png.webp": "/dheerajforcul/static/media/png.e39bf0c257a0dc8cc65b.webp",
@@ -10,15 +10,14 @@
     "static/media/comp.jpg": "/dheerajforcul/static/media/comp.47e6e5a689a555f00a21.jpg",
     "static/media/prom.jpg": "/dheerajforcul/static/media/prom.8263e8e39c4d0b66175d.jpg",
     "static/media/boardgames.jpg": "/dheerajforcul/static/media/boardgames.91022fac99b3dc7ee0e9.jpg",
-    "static/media/img1.png": "/dheerajforcul/static/media/img1.aee24d97bbd2d1e60752.png",
     "static/media/gd.jpg": "/dheerajforcul/static/media/gd.36113cde73a9399a9da1.jpg",
     "index.html": "/dheerajforcul/index.html",
     "main.357d2dab.css.map": "/dheerajforcul/static/css/main.357d2dab.css.map",
-    "main.969e410a.js.map": "/dheerajforcul/static/js/main.969e410a.js.map",
+    "main.cfa15ccd.js.map": "/dheerajforcul/static/js/main.cfa15ccd.js.map",
     "377.c7674f02.chunk.js.map": "/dheerajforcul/static/js/377.c7674f02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.357d2dab.css",
-    "static/js/main.969e410a.js"
+    "static/js/main.cfa15ccd.js"
   ]
 }

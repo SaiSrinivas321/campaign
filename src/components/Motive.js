@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Center, Heading, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
-import ARC from "../images/arcade.jpg"
-import BGAMES from "../images/boardgames.jpg"
-import COMP from "../images/comp.jpg"
-import GAM from "../images/gamification.jpg"
-import PROM from "../images/prom.jpg"
-import GD from "../images/gd.jpg"
+import ARC from "../images/arcade.webp"
+import BGAMES from "../images/boardgames.webp"
+import COMP from "../images/comp.webp"
+import GAM from "../images/gamification.webp"
+import PROM from "../images/prom.webp"
+import GD from "../images/gd.webp"
 
 import "../styles/styles.css"
 
@@ -48,7 +48,7 @@ const vision = [
 
 const Motive = () => {
   return(
-      <Center id='motive' className="motive initfont"  flexDirection = {'column'} p={2} m={2}>
+      <Center id='initiatives' className="motive initfont"  flexDirection = {'column'} p={2} m={2}>
           <Heading m={3} className={'heading'} marginTop={"75px"}>Initiatives</Heading>
          <Center flexDirection={'column'}>
          <SimpleGrid columns={[1,1,3,3]} spacing={10}>
@@ -83,7 +83,7 @@ const Motive = () => {
         >
           <Image
             h={'260px'}
-            w={'auto'}
+            w={'300px'}
             src={vis.img}
             p={2}
             objectFit={"cover"}

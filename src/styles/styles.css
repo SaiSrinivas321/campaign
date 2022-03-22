@@ -26,9 +26,9 @@ html {
   animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.name{
-    font-family: 'Lato', sans-serif !important;
-    font-weight: 800 !important;
+.name {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 800 !important;
 }
 
 /* .About{
@@ -73,9 +73,9 @@ p {
   z-index: 2;
 }
 
-.initfont{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800 !important;
+.initfont {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800 !important;
 }
 
 blockquote {
@@ -162,7 +162,7 @@ blockquote:after {
   left: 0px;
   bottom: 0px;
   right: 0px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .overview {
@@ -222,6 +222,41 @@ iframe {
   border: none;
   padding: 0;
   margin: 0;
+}
+/* html, body{
+  height: 100%;
+  font-weight: 800;
+} */
+
+/* body{
+  background: #030321;
+  font-family: Arial;
+} */
+
+.animate-charcter {
+  background-image: linear-gradient(
+    -225deg,
+    orange 0%,
+    #23d5ab 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 @media only screen and (max-width: 1170px) {
   .vertical-timeline-element-content .vertical-timeline-element-date {

@@ -1,4 +1,4 @@
-import { useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { Heading, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 import React from 'react';
 import { FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import {
@@ -130,6 +130,10 @@ const Footer = () => {
                 </Button>
                </Center>
               </form> */}
+        <Heading size={'lg'} textAlign={'center'} my={2}>
+          Cast your vote on <br /><span style={{'fontWeight' : 800}}>5th April 2022 </span>
+
+        </Heading>
       </Center>
       <Center flexDirection={'column'}>
         <Text mb={2}>Designed by Naga Sai , Srinivas</Text>
@@ -146,11 +150,13 @@ const Footer = () => {
         >
           <Text>© All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-           
-              <SocialButton label={'Twitter'} href="mailto:dheerajcs2210@gmail.com">
-                <Icon as={FaEnvelope} w={5} h={5} _hover={{ color: 'red' }} />
-              </SocialButton>
-          
+            <SocialButton
+              label={'Twitter'}
+              href="mailto:dheerajcs2210@gmail.com"
+            >
+              <Icon as={FaEnvelope} w={5} h={5} _hover={{ color: 'red' }} />
+            </SocialButton>
+
             <SocialButton
               label={'Instagram'}
               href={

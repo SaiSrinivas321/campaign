@@ -32,18 +32,18 @@ const Navbar = ({percentage}) => {
       <Box bg={useColorModeValue('gray.100', 'gray.900')}  zIndex={10} className={'navbar'} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'} px={2}>
           <HStack spacing={8} alignItems={'center'}>
-          <a href="/" _hover = {{ textDecoration : 'none'}} >
-            <Heading size={'lg'}  >#<span style ={{'fontWeight': 800,'color' : 'orange'}}>C</span>ul<span style ={{'fontWeight': 800,'color' : '#32CD32'}}>S</span>ec<span style ={{'fontWeight': 800,'color' : '#87CEEB'}}>D</span>heeraj</Heading>
+          <a href="/campaign" _hover = {{ textDecoration : 'none'}} >
+            <Heading size={'lg'}  className='animate-charcter'>#<span style ={{'fontWeight': 800,'color' : 'orange'}}>C</span>ul<span style ={{'fontWeight': 800,'color' : '#32CD32'}}>S</span>ec<span style ={{'fontWeight': 800,'color' : '#87CEEB'}}>D</span>heeraj</Heading>
              </a>
             <HStack
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
                     <Box m={1} pt={2} px={2} >
-                   <a href='#motive'><Heading size={'md'} className={'navtext'}>Initiatives</Heading></a> 
+                   <a href='#initiatives'><Heading size={'md'} className={'navtext'}>Initiatives</Heading></a> 
                     </Box>
                     <Box m={1} pt={2} px={2} >
-                    <a href='/dheerajforcul/manifesto' target={'_blank'}> <Heading size={'md'} className={'navtext'}>Manifesto</Heading></a>
+                    <a href='/campaign/manifesto' target={'_blank'}> <Heading size={'md'} className={'navtext'}>Manifesto</Heading></a>
                     </Box>
                     <Box m={1} pt={2} px={2} >
                     <a href='#credentials'> <Heading size={'md'} className={'navtext'}>Credentials</Heading></a>
@@ -54,7 +54,7 @@ const Navbar = ({percentage}) => {
                        <Heading size={'md'} className={'navtext'}>Campaign</Heading>
                     </MenuButton>
                     <MenuList>
-                    <a href='/dheerajforcul/feasibility' target={'_blank'} rel='noreferrer'> <MenuItem> <Text>Feasibility-report</Text></MenuItem></a>
+                    <a href='/campaign/feasibility' target={'_blank'} rel='noreferrer'> <MenuItem> <Text>Feasibility-report</Text></MenuItem></a>
                     <MenuItem isDisabled> <Text>Video Campaign</Text></MenuItem>
                         <MenuDivider />
                         <a href={'https://wa.me/917337493297'} target={'_blank'} rel='noreferrer'><MenuItem> <Icon as={FaWhatsapp} my={1} mx={2} boxSize={'5'}/><Text p={2}>Contact</Text></MenuItem></a>
@@ -82,10 +82,10 @@ const Navbar = ({percentage}) => {
           <Box pb={4} display={{ md: 'none' }} zIndex={10}>
             <Stack as={'nav'} spacing={4} zIndex={10}>
             <Box m={1} pt={2} px={2} onClick={onClose}>
-            <a href='#motive'><Heading size={'md'} className={'navtext'}>Initiatives</Heading></a>
+            <a href='#initiatives'><Heading size={'md'} className={'navtext'}>Initiatives</Heading></a>
                     </Box>
                     <Box m={1} pt={2} px={2} onClick={onClose}>
-                    <a href='/dheerajforcul/manifesto' target={'_blank'}> <Heading size={'md'} className={'navtext'}>Manifesto</Heading></a>
+                    <a href='/campaign/manifesto' target={'_blank'}> <Heading size={'md'} className={'navtext'}>Manifesto</Heading></a>
                     </Box>
                     <Box m={1} pt={2} px={2} onClick={onClose} >
                     <a href='#credentials'> <Heading size={'md'} className={'navtext'}>Credentials</Heading></a>
@@ -97,7 +97,7 @@ const Navbar = ({percentage}) => {
                        <Heading size={'md'} className={'navtext'}>Campaign</Heading>
                     </MenuButton>
                     <MenuList>
-                    <a href='/dheerajforcul/feasibility' target={'_blank'} rel={'noreferrer'} > <MenuItem onClick={onClose}> <Text>Feasibility-report</Text></MenuItem></a>
+                    <a href='/campaign/feasibility' target={'_blank'} rel={'noreferrer'} > <MenuItem onClick={onClose}> <Text>Feasibility-report</Text></MenuItem></a>
                     <MenuItem isDisabled> <Text>Video Campaign</Text></MenuItem>
                         <MenuDivider />
                         <a href={'https://wa.me/917337493297'} target={'_blank'} rel={'noreferrer'}><MenuItem onClick={onClose} ><Icon as={FaWhatsapp} my={1} mx={2} boxSize={'5'} /> <Text p={2}>Contact</Text></MenuItem></a>

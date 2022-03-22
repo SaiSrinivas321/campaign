@@ -9,7 +9,7 @@ import '../styles/styles.css';
 
 const culcred = [
   {
-    title: 'Non Competitive Events Head (Informals, Meraki, Spotlight) ',
+    title: 'Head, Non Competitive Events (Informals, Meraki, Spotlight) || Sangam - Saarang ',
     year: '2021- present',
     color: '#FFB72B',
   },
@@ -24,34 +24,39 @@ const culcred = [
     color: '#FFB72B',
   },
   {
-    title: 'Nova Coordinator, Saarang',
-    year: '2020-21',
+    title: 'Litsoc Representative, Godavari Hostel',
+    year: '2022-present',
     color: '#B5FE83',
+  },
+  {
+    title: 'Coordinator, Nova || Saarang',
+    year: '2020-21',
+    color: '#FFB72B',
   },
 ];
 const gencred = [
   {
     title: 'Consultant, 180 Degrees Consulting IITM ',
-    year: '2021 - present',
+    year: '2021 - 2022',
     color: '#FFE61B',
   },
   {
-    title: 'Internship Coordinator',
+    title: 'Coordinator, Internship Team',
     year: '2020-21',
     color: '#00B4D8',
   },
   {
-    title: 'Sponsorship Coordinator, ChES',
+    title: 'Coordinator, Sponsorship & Finance || ChES',
     year: '2020-21',
     color: '#FFE61B',
   },
   {
-    title: 'Workshops Coordinator, Shaastra',
+    title: 'Coordinator, Events & Workshops || Shaastra',
     year: '2020-21',
     color: '#00B4D8',
   },
   {
-    title: 'Moot Court Volunteer, Shaastra',
+    title: 'Volunteer, Moot Court || Shaastra',
     year: '2019-20',
     color: '#FFE61B',
   },
@@ -76,7 +81,7 @@ const Credentials = () => {
         fontWeight={700}
       >
         <Heading m={2} className="heading" marginTop={'75px'}>
-          Cultural Credentials
+          Relevant Credentials
         </Heading>
         <VerticalTimeline animate = {animate}>
           {culcred.map(cred => (
@@ -92,7 +97,7 @@ const Credentials = () => {
           ))}
         </VerticalTimeline>
         <Heading m={2} className="heading" color={'#03045E'}>
-          Gen Credentials
+          Other Credentials
         </Heading>
         <VerticalTimeline animate = {animate}>
           {gencred.map(cred => (

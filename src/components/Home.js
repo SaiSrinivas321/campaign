@@ -66,17 +66,23 @@ const Home = () => {
       setAlert(true);
     });
     document.onkeydown = e => {
-      if (e.ctrlKey || e.shiftKey || e.key === 'F12') {
+      if ((e.ctrlKey && e.shiftKey) || e.key === 'F12') {
         e.preventDefault();
         setAlert(true);
       }
     };
+    localStorage.clear('chakra-ui-color-mode');
   });
   return (
-    <Flex flexDirection={'column'} className="mainbg" width={"100%"} id="particles-js">
-       <div className="App-particles__container">
-        <ParticlesBg  num={5} type="polygon" bg={true}/>
-        </div>
+    <Flex
+      flexDirection={'column'}
+      className="mainbg"
+      width={'100%'}
+      id="particles-js"
+    >
+      <div className="App-particles__container">
+        <ParticlesBg num={35} type="cobweb" color="#0800ff" bg={false} />
+      </div>
       <Flex width={'100%'} flexDirection={'column'}>
         {alertt ? (
           <AlertDialog
@@ -92,7 +98,7 @@ const Home = () => {
               <AlertDialogHeader></AlertDialogHeader>
               <AlertDialogCloseButton />
               <AlertDialogBody fontSize="xl" fontWeight={'bold'}>
-                Method Not allowed
+                This Action is not allowed
               </AlertDialogBody>
               <AlertDialogFooter>
                 <Button ref={cancelRef} onClick={onClose}>

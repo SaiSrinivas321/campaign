@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/campaign/static/css/main.edc0eeec.css",
-    "main.js": "/campaign/static/js/main.a81c8308.js",
+    "main.css": "/campaign/static/css/main.a6051bd0.css",
+    "main.js": "/campaign/static/js/main.586b9ce0.js",
     "static/js/377.c7674f02.chunk.js": "/campaign/static/js/377.c7674f02.chunk.js",
     "static/media/feasibility.pdf": "/campaign/static/media/feasibility.dc3d04fd38729af25b2c.pdf",
     "static/media/dheeraj.png": "/campaign/static/media/dheeraj.539f87dc6d9e295b620f.png",
@@ -12,12 +12,12 @@
     "static/media/boardgames.webp": "/campaign/static/media/boardgames.58acc69d981ec67adf8b.webp",
     "static/media/gd.webp": "/campaign/static/media/gd.a106d1e77a5230ca64b1.webp",
     "index.html": "/campaign/index.html",
-    "main.edc0eeec.css.map": "/campaign/static/css/main.edc0eeec.css.map",
-    "main.a81c8308.js.map": "/campaign/static/js/main.a81c8308.js.map",
+    "main.a6051bd0.css.map": "/campaign/static/css/main.a6051bd0.css.map",
+    "main.586b9ce0.js.map": "/campaign/static/js/main.586b9ce0.js.map",
     "377.c7674f02.chunk.js.map": "/campaign/static/js/377.c7674f02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edc0eeec.css",
-    "static/js/main.a81c8308.js"
+    "static/css/main.a6051bd0.css",
+    "static/js/main.586b9ce0.js"
   ]
 }

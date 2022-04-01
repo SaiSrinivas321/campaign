@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/campaign/static/css/main.a6051bd0.css",
-    "main.js": "/campaign/static/js/main.586b9ce0.js",
+    "main.css": "/campaign/static/css/main.fc399b68.css",
+    "main.js": "/campaign/static/js/main.9e128c17.js",
     "static/js/377.c7674f02.chunk.js": "/campaign/static/js/377.c7674f02.chunk.js",
     "static/media/feasibility.pdf": "/campaign/static/media/feasibility.dc3d04fd38729af25b2c.pdf",
-    "static/media/dheeraj.png": "/campaign/static/media/dheeraj.539f87dc6d9e295b620f.png",
+    "static/media/dheeraj.png": "/campaign/static/media/dheeraj.2d01fd3d034e28bc976d.png",
     "static/media/comp.webp": "/campaign/static/media/comp.cca6a9117e1e1d039629.webp",
     "static/media/arcade.webp": "/campaign/static/media/arcade.9084555f955b13fccc62.webp",
     "static/media/prom.webp": "/campaign/static/media/prom.5ae4acdd5fd950e73e8a.webp",
@@ -12,12 +12,12 @@
     "static/media/boardgames.webp": "/campaign/static/media/boardgames.58acc69d981ec67adf8b.webp",
     "static/media/gd.webp": "/campaign/static/media/gd.a106d1e77a5230ca64b1.webp",
     "index.html": "/campaign/index.html",
-    "main.a6051bd0.css.map": "/campaign/static/css/main.a6051bd0.css.map",
-    "main.586b9ce0.js.map": "/campaign/static/js/main.586b9ce0.js.map",
+    "main.fc399b68.css.map": "/campaign/static/css/main.fc399b68.css.map",
+    "main.9e128c17.js.map": "/campaign/static/js/main.9e128c17.js.map",
     "377.c7674f02.chunk.js.map": "/campaign/static/js/377.c7674f02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6051bd0.css",
-    "static/js/main.586b9ce0.js"
+    "static/css/main.fc399b68.css",
+    "static/js/main.9e128c17.js"
   ]
 }
